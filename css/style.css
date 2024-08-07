@@ -1,0 +1,76 @@
+/* @import "modern-normalize"; */
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* fine reset  */
+
+:root{
+    --color-primary: #000;
+    --color-secondary: orange;
+    --color-bg: #fff;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-bg);
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    height: 90%;
+    border: 2px solid var(--color-primary);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container > div > button{
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
+
+}
+
+.container > div > button:hover{
+    background-color: var(--color-secondary);
+}
+
+.container-winsloses{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    margin: 30px auto;
+}
